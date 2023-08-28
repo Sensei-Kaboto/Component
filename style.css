@@ -95,3 +95,42 @@ header{
   }
 
 /* -----------------Main body ----------------- */
+main{
+    padding: 30px;
+    border: solid;
+}
+
+.main h3{
+    margin: 0px;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.main p{
+    margin: 0px;
+    font-size:0.88rem;
+    display: inline;
+    margin-right: 250px;
+    
+    border: solid;
+    
+
+}
+
+.main img{
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    margin-top: 13px;
+    
+}
+
+.main .category{
+    margin-right: 45px;
+    border: solid red;
+    margin: 16px  30px ;
+    height: 56px;
+    border-radius: 12px;
+    
+}
+
