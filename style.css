@@ -1,0 +1,97 @@
+:root {
+    /* -------- Primary -------------- */
+    --Light__red : hsl(0,100%,67%);
+    --Orangey__yellow : hsl(39, 100%, 56%);
+    --Green__teal : hsl(66, 100%,37%);
+    --Cobalt__blue : hsl(234, 85%,45%);
+
+    /* ------------- Gradiant ----------- */
+    --Bg-Light__slate__blue :rgba(119, 85, 255, 1);
+    --Bg-Light__royal__blue:rgba(47, 44, 233, 1);
+    --Cr__violet__blue: rgba(119, 85, 255, 1);
+    --Cr__persian__blue : hsla(241, 72%, 46%,0);
+
+    /* ------------ Neutral ---------------- */
+    --White: hsl(0,0%,100%);
+    --Pale__blue: hsl(221,100%,96%);
+    --Light__lavender: hsl(241,100%,89%);
+    --Dark__gray__blue:hsl(224,30%,27%);
+
+    /* ------------ Font ----------- */
+    --Font__size : 18px;
+    --Font__weight: 700;
+
+}
+
+html{
+    height: 809px;
+}
+
+html,
+body{
+    margin: 0;
+    padding: 0;
+    font-size: var(--Font__size);
+    font-family: 'Hanken Grotesk', sans-serif   ; 
+    font-weight: var(--Font__weight);   
+}
+
+
+
+/* ---------header -------------- */
+header{
+    background: linear-gradient(var(--Bg-Light__slate__blue),var(--Bg-Light__royal__blue));
+    color: var(--White);
+    text-align: center;
+    border-radius: 0px 0px 32px 32px ;
+    padding: 24px;
+    height: 356px;
+}
+
+.header h3{
+    margin: 0px;
+    font-weight: 700;
+    line-height: 23px;
+}
+
+.circle {
+    /* border: solid; */
+    padding: 25px;
+    border-radius: 50%;
+    height: 140px;
+    width: 140px;
+    margin: 24px auto;
+    background: linear-gradient(var(--Cr__violet__blue), var( --Bg-Light__royal__blue ));
+}
+
+.circle p{
+    margin-top: 18px;
+    margin-bottom: 0px;
+    font-size: 3.5rem ;
+    font-weight: 800;
+}
+
+.sub__circle{
+    font-size: 0.88rem !important;
+    margin: 0px !important;
+    opacity: 52%;
+    color: var(--Light__lavender);
+
+}
+
+.header h3.Spacial__Head {
+    
+    margin-top: 25px;
+    font-size: 1.4rem;
+
+  }
+
+  .header p.Spacial__para{
+
+    font-weight: 500 ;
+    font-size: 0.88rem;
+    color: var(--Light__lavender);
+
+  }
+
+/* -----------------Main body ----------------- */
