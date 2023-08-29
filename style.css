@@ -2,7 +2,7 @@
     /* -------- Primary -------------- */
     --Light__red : hsl(0,100%,67%);
     --Orangey__yellow : hsl(39, 100%, 56%);
-    --Green__teal : hsl(66, 100%,37%);
+    --Green__teal :hsla(166, 100%, 37%, 1);
     --Cobalt__blue : hsl(234, 85%,45%);
 
     /* ------------- Gradiant ----------- */
@@ -16,6 +16,14 @@
     --Pale__blue: hsl(221,100%,96%);
     --Light__lavender: hsl(241,100%,89%);
     --Dark__gray__blue:hsl(224,30%,27%);
+
+    /* --------------- Summary bg --------------- */
+    --blue-95--white:rgba(17, 37, 214, 1);
+    --green-95-white:rgba(11, 201, 157, 0.103);
+    --yellow-95-white:rgba(248, 246, 108, 0.603);
+    --red-95-white:rgba(253, 237, 237, 0.95);
+
+
 
     /* ------------ Font ----------- */
     --Font__size : 18px;
@@ -95,9 +103,6 @@ header{
   }
 
 /* -----------------Main body ----------------- */
-main{
-    border: solid;
-}
 
 .main h3{
     margin: 24px  32px;
@@ -108,7 +113,7 @@ main{
 
 .main .category{
     /* margin-right: 3px; */
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: 16px  30px ;
     border-radius: 12px;
     padding: 18px 16px;
@@ -129,15 +134,17 @@ main{
     font-size:0.88rem;
     line-height: 21px;
     font-weight: 500;
+    color: rgba(255, 85, 85, 1);
 
 }
 
 
  .main .category p + p{
-    margin-left: 124px !important;
+    margin-left: 124px;
     margin-right: 5px;
     font-size: 0.88rem;
     font-weight: 700;
+    color: var(--Dark__gray__blue);
     /* float: right; */
 }
 
@@ -153,18 +160,49 @@ main{
 
 /* ----------------- bg color ------------- */
 
-.reaction{
-    background-color: var(--Light__red);
+main div:nth-of-type(1){
+    background: var(--red-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #F55);
 }
 
-.memory{
-    background-color: var(--Orangey__yellow);
+div:nth-of-type(2){
+    background: var(--yellow-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #FFB21E);
 }
 
-.verbal{
-    background-color: var(--Green__teal);
+div:nth-of-type(3){
+    background: var(--green-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #00BB8F);
 }
 
-.visual {
-    background-color: var(--Cobalt__blue);
+div:nth-of-type(4){
+    background: var(--blue-95-white, linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #1125D6);
+
 }
+
+/* ------------- color of each category-------------- */
+main div:nth-of-type(2) > p{
+    color:var(--Orangey__yellow);
+}
+
+div:nth-of-type(3) > p{
+    color: var(--Green__teal);
+}
+
+div:nth-of-type(4) > p{
+    color: var(--Cobalt__blue);
+}
+
+/* ------------------- space on the score ------------------ */
+div:nth-of-type(2) p + p{
+    margin-left: 127px !important;
+   
+}
+div:nth-of-type(3) p + p{
+    margin-left: 139px !important;
+   
+}
+div:nth-of-type(4) p + p{
+    margin-left: 143px !important;
+}
+
+
+
+
