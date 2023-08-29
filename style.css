@@ -96,41 +96,75 @@ header{
 
 /* -----------------Main body ----------------- */
 main{
-    padding: 30px;
     border: solid;
 }
 
 .main h3{
-    margin: 0px;
+    margin: 24px  32px;
     font-size: 1.4rem;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
+    
 }
 
-.main p{
-    margin: 0px;
-    font-size:0.88rem;
-    display: inline;
-    margin-right: 250px;
+.main .category{
+    /* margin-right: 3px; */
+    border: 1px solid red;
+    margin: 16px  30px ;
+    border-radius: 12px;
+    padding: 18px 16px;
     
-    border: solid;
-    
-
 }
 
 .main img{
     width: 20px;
     height: 20px;
     margin-right: 12px;
-    margin-top: 13px;
+    float: left;
     
 }
 
-.main .category{
-    margin-right: 45px;
-    border: solid red;
-    margin: 16px  30px ;
-    height: 56px;
-    border-radius: 12px;
-    
+
+.main p{
+    display: inline;
+    font-size:0.88rem;
+    line-height: 21px;
+    font-weight: 500;
+
 }
 
+
+ .main .category p + p{
+    margin-left: 124px !important;
+    margin-right: 5px;
+    font-size: 0.88rem;
+    font-weight: 700;
+    /* float: right; */
+}
+
+.main .category span{
+    font-size: 0.88rem;
+    font-weight: 700;
+    opacity: 52%;
+    float: right;
+    color: var(--Dark__gray__blue);
+    margin-top: 2px;
+}
+
+
+/* ----------------- bg color ------------- */
+
+.reaction{
+    background-color: var(--Light__red);
+}
+
+.memory{
+    background-color: var(--Orangey__yellow);
+}
+
+.verbal{
+    background-color: var(--Green__teal);
+}
+
+.visual {
+    background-color: var(--Cobalt__blue);
+}

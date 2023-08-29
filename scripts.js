@@ -24,9 +24,13 @@ document.addEventListener("DOMContentLoaded",()=>{
                 dataDiv.appendChild(categoryParagraph)
 
                 const categoryScore = document.createElement("p");
-                categoryScore.textContent=`${category.score} / 100`
+                categoryScore.textContent=`${category.score}`
                 dataDiv.appendChild(categoryScore);
 
+                const Score= document.createElement("span");
+                Score.textContent='/100';
+                dataDiv.appendChild(Score);
+                
                 main.appendChild(dataDiv)
             });
 
