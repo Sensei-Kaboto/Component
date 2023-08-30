@@ -241,7 +241,7 @@ div:nth-of-type(4) p + p{
         display: flex;
         align-items: center ;
         justify-content: center;
-        margin: 50px auto;
+        margin: 15% auto;
         width: 736px; 
        
     }
