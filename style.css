@@ -44,7 +44,10 @@ body{
     font-weight: var(--Font__weight);   
 }
 
-
+.container{
+    background-color:rgb(248, 236, 236) ;
+    border-radius: 32px;
+}
 
 /* ---------header -------------- */
 header{
@@ -203,6 +206,110 @@ div:nth-of-type(4) p + p{
     margin-left: 143px !important;
 }
 
+/* ----------button ----------------- */
+ button{
+    margin:  25px ;
+    border-radius: 128px;
+    height: 56px;
+    width: 315px;
+    margin-top: 8px;
+    background-color: var(--Dark__gray__blue);
+    color: white;
+    font-size: var(--Font__size);
+    font-weight: 700;
+    border: 0px;
+ }
 
+ /* -------------- Footer ------------------ */
 
+ footer{
+    font-size: 0.78rem;
+    text-align: center;
+    font-weight: 500;
+    color: var(--Dark__gray__blue);
+    margin: 30px;
+    margin-top: 0px;
+ }
+
+ button:hover{
+    background: linear-gradient(var(--Cr__violet__blue), var( --Bg-Light__royal__blue ));
+
+ }
+
+/* -------------- Desktop ----------------- */
+@media(min-width : 376px){
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 40px auto;
+        width: 736px; 
+       
+    }
+
+    header{
+        border-radius: 32px;
+        height: 500px;
+    }
+    .header h3{
+        font-size: 1.33rem;
+        margin-top: 20px;
+    }
+    .main .category{
+        margin: 16px 40px;
+    }
+    .circle {
+        height: 200px;
+        width: 200px;
+    }
+    
+    .circle p{
+        font-size: 4rem ;
+        margin-top: 40px;
+    }
+
+    .sub__circle{
+        font-size: 1rem !important;
+    }
+    .header h3.Spacial__Head{
+        font-size: 1.78rem;
+        margin: 0px;
+    }
+    .header p.Spacial__para{
+        font-size: 1rem !important;
+        padding: 25px;
+        margin-top: 0px;
+    }
+
+    .main h3{
+        margin: 0px 40px;
+        font-size: 1.4rem;
+        margin-bottom: 28px;
+        
+    }
+
+    main div p{
+        font-size: 1rem ;
+    }
+
+    main div p+p{
+        margin-left: 97px !important;
+    }
+    div:nth-of-type(2) p + p{
+        margin-left: 99px !important;
+    }
+    div:nth-of-type(3) p + p{
+        margin-left: 110px !important;
+    }
+    div:nth-of-type(4) p + p{
+        margin-left: 113px !important;
+    }
+    
+    button{
+        font-size: 1rem;
+        width: 288px;
+        margin:40px;
+    }
+}
 
