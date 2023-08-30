@@ -1,4 +1,3 @@
-
 # Frontend Mentor - Results summary component solution
 
 This is a solution to the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
@@ -13,11 +12,8 @@ This is a solution to the [Results summary component challenge on Frontend Mento
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+- [Author
+  ](#author)
 
 ## Overview
 
@@ -31,20 +27,18 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+Mobile view
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+![1693403651493](image/README/1693403651493.png)
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
+Desktop view
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![1693403752450](image/README/1693403752450.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL:
+- Live Site URL:
 
 ## My process
 
@@ -53,63 +47,44 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- vanilla JavaScript
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+In this project, I learned a lot of concepts and enriched my knowledge in areas where I was previously lacking. Here are some of the concepts I have learned through the completion of this project:
 
-To see how you can add code snippets, see below:
+* Selectors css:
 
-```html
-<h1>Some HTML code I'm proud of</h1>
+  The `:nth-of-type` selector allows you select one or more elements based on their source order, according to a formula
+
+  ```
+  main div:nth-of-type(1){
+
+  }
+  ```
+
+  The adjacent sibling combinator in CSS isn’t a selector on its own, but a way of combining two selectors
+
+```
+	.main .category p + p {}
 ```
 
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
+* Javascript
+
+here the methods I used to fetch my data store in data.json dynamically  on the Html containers
+
 ```
-
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+ fetch("data.json")
+        .then(response => response.json())
+        .then(data => { ................}
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+During this project, I learned the importance of conducting extensive research on CSS selectors and delved into various JavaScript concepts. Additionally, I recognized the value of engaging in more projects to further explore and discover new concepts.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Website - Daniel Kaboto
+- Frontend Mentor - [@Sensei-Kaboto](https://www.frontendmentor.io/profile/yourusername)
+- Twitter - [@](https://www.twitter.com/yourusername)Sensei-kn
